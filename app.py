@@ -1,7 +1,7 @@
 from flask import Flask, request, render_template, jsonify, redirect
 from crit import *
 #TODO
-#Make sure when user removes file the text for it removes as well.
+#Make sure when user removes file the text for it removes as well. - DONE!
 #Change name
 app = Flask(__name__)
 

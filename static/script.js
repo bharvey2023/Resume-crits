@@ -75,6 +75,7 @@ function setFile(file) {
 
 function clearFile() {
   fileInput.value = "";
+  fileNameEl.textContent = "";
   dropzoneContent.hidden = false;
   fileInfo.hidden = true;
 }
