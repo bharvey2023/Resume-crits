@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume Critique — Get Honest Feedback on Your Resume</title>
+  <meta name="description" content="Upload your resume and get instant, AI-powered critique covering structure, impact, clarity, and ATS compatibility." />
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand">
+        <span class="brand-mark">RC</span>
+        <span class="brand-name">Resume<strong>Critique</strong></span>
+      </a>
+      <nav class="nav">
+        <a href="#how">How it works</a>
+        <a href="#critique">Try it</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <span class="eyebrow">Honest. Instant. Actionable.</span>
+        <h1>Get a brutally honest critique of your resume.</h1>
+        <p class="hero-sub">
+          Upload a PDF, DOCX, or TXT — or paste your resume text. We'll score it
+          and tell you exactly what to fix.
+        </p>
+        <a href="#critique" class="btn btn-primary btn-lg">Critique my resume</a>
+      </div>
+    </section>
+
+    <section id="critique" class="critique-section">
+      <div class="container">
+        <div class="card">
+          <h2>Submit your resume</h2>
+          <p class="muted">Choose a file or paste the text. Optionally add a target role for sharper feedback.</p>
+
+          <form id="resume-form" class="form" novalidate>
+            <div class="field">
+              <label for="role">Target role <span class="optional">(optional)</span></label>
+              <input
+                type="text"
+                id="role"
+                name="role"
+                placeholder="e.g. Senior Backend Engineer"
+                maxlength="120"
+                autocomplete="off"
+              />
+            </div>
+
+            <div class="field">
+              <label>Upload file</label>
+              <div
+                id="dropzone"
+                class="dropzone"
+                tabindex="0"
+                role="button"
+                aria-label="Upload resume file"
+              >
+                <input
+                  type="file"
+                  id="file"
+                  name="file"
+                  accept=".pdf,.doc,.docx,.txt,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,text/plain"
+                  hidden
+                />
+                <div class="dropzone-content">
+                  <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="17 8 12 3 7 8"></polyline>
+                    <line x1="12" y1="3" x2="12" y2="15"></line>
+                  </svg>
+                  <p><strong>Click to upload</strong> or drag and drop</p>
+                  <p class="muted small">PDF, DOCX, or TXT — up to 5MB</p>
+                </div>
+                <div id="file-info" class="file-info" hidden>
+                  <span id="file-name"></span>
+                  <button type="button" id="file-remove" class="link-btn" aria-label="Remove file">Remove</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="divider"><span>or</span></div>
+
+            <div class="field">
+              <label for="resume-text">Paste resume text</label>
+              <textarea
+                id="resume-text"
+                name="resume_text"
+                rows="10"
+                placeholder="Paste the contents of your resume here..."
+                maxlength="50000"
+              ></textarea>
+            </div>
+
+            <div id="form-error" class="form-error" hidden></div>
+
+            <div class="actions">
+              <button type="submit" id="submit-btn" class="btn btn-primary">
+                <span class="btn-label">Get my critique</span>
+                <span class="spinner" aria-hidden="true"></span>
+              </button>
+              <button type="reset" id="reset-btn" class="btn btn-ghost">Clear</button>
+            </div>
+          </form>
+        </div>
+
+        <section id="result" class="result" hidden aria-live="polite">
+          <div class="card">
+            <header class="result-header">
+              <div>
+                <h2>Your critique</h2>
+                <p class="muted">Generated <span id="result-time"></span></p>
+              </div>
+              <div class="score-ring" id="score-ring">
+                <span id="score-value">—</span>
+                <small>/ 100</small>
+              </div>
+            </header>
+
+            <div id="result-summary" class="summary"></div>
+
+            <div class="result-grid">
+              <div>
+                <h3 class="good">✅ Strengths</h3>
+                <ul id="result-strengths" class="bullet-list"></ul>
+              </div>
+              <div>
+                <h3 class="bad">⚠️ Improvements</h3>
+                <ul id="result-improvements" class="bullet-list"></ul>
+              </div>
+            </div>
+
+            <div id="result-sections" class="sections-block"></div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section id="how" class="how">
+      <div class="container">
+        <h2>How it works</h2>
+        <ol class="steps">
+          <li><span class="step-num">1</span><div><strong>Upload or paste</strong><p>Drop a PDF, DOCX, or TXT — or paste plain text.</p></div></li>
+          <li><span class="step-num">2</span><div><strong>We analyze</strong><p>Structure, impact statements, ATS compatibility, and clarity.</p></div></li>
+          <li><span class="step-num">3</span><div><strong>Get a report</strong><p>Score, strengths, and prioritized fixes — in seconds.</p></div></li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> ResumeCritique. Built for honest feedback.</p>
+    </div>
+  </footer>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>

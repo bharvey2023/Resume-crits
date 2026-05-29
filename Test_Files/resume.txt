@@ -1,0 +1,56 @@
+Bryce Harvey
+Jacksonville, FL | 904-235-5631 | harveybryce05@outlook.com | https://linkedin.com/in/bryce-t-harvey | https://github.com/bharvey2023
+Education
+Bachelor of Science in Computer Science; GPA 3.66/4.0 University of North Florida, Jacksonville, FL
+Awards: Dean’s List x3
+Professional Summary
+May 2026
+Computer scientist focused on software development, data systems, and AI integration. Experienced in Python, Java, and SQL,
+building full-stack applications, real-time data pipelines, and AI-powered tools. Interested in developing scalable systems that turn complex
+data into actionable insights.
+Technical Skills
+• Languages: Python, Java, C, SQL, C#, Assembly, enterprise COBOL
+• Certificates/Badges: IBM ZXPLORE: Concepts, Advanced, All Star
+• Tools/Technologies: Flask, OpenAI API, ANTLR, Arduino, Git, GitHub, SSH, SMB, Docker, Azure
+• Other Skills: Algorithms, Data Structures, Object-Oriented Programming, Databases, Compiler Design, Linux/Unix, z/OS
+Technical Experience
+AI Development Intern – Archetypals May 2025 – August 2025
+AI Squared, Remote (mentored by Founder of AI Squared)
+• Built a static pre-launch landing page using HTML, CSS, and JavaScript that enabled users to sign up for beta access via email,
+supporting early user engagement and project visibility.
+• Contributed to an open-source large language model (LLM) project by enhancing user interface components with JavaScript and
+basic HTML/CSS to be presented to potential investors.
+• Configured and deployed the application to Azure Web App Services using Azure CLI and custom build configurations,
+managing environment variables to securely connect OpenAI models to the web application.
+Hacking 4 Intelligence Intern July 2023 - August 2023
+AI Squared, Remote
+• Applied Lean Launchpad methodologies to develop a theoretical product roadmap addressing real-world cybersecurity
+challenges identified by the National Security Agency (NSA).
+• Conducted interviews with cybersecurity professionals to gather insights on critical pain points, operational needs, and desired
+outcomes.
+• Delivered weekly progress presentations to peers and mentors, articulating project milestones and design decisions to gather
+feedback and refine the theoretical product concept.
+• Gained foundational computer science knowledge through lectures and applied learning on core computing and security
+concepts.
+Projects
+Meddie – AI Medical Assistant
+• Built a full-stack AI-powered medical assistant using Python, Flask, and OpenAI API to deliver real-time clinical insights and
+contextual responses.
+• Designed a multi-session chat system enabling users to manage multiple conversations (patient cases, research topics)
+simultaneously.
+• Implemented text summarization pipelines for medical notes and research papers using GPT-based models.
+• Developed a dynamic frontend with HTML, CSS, and JavaScript, featuring sidebar navigation and interactive chat UI.
+Heartbeat Sensor Data Collector
+• Engineered a hardware-software system using Arduino (C) and Python to capture and process real-time heart rate (BPM)
+data.
+• Built a serial communication pipeline using pyserial to stream sensor data from Arduino to Python.
+• Performed statistical analysis (average, median) and visualized trends using matplotlib.
+• Integrated SQL database storage to persist and analyze historical biometric data.
+Raspberry PI retro gaming console
+• Configured RetroPie on Raspberry Pi 3B+ and modified GPIO shutdown script for safe power handling.
+• Used SSH and SMB to remotely manage system files and emulator configurations from macOS.
+• Cloned and applied custom UI themes via Git to personalize the emulator interface.
+Compiler for language LITTLE
+• Built a multi-stage compiler in Java using ANTLR to tokenize, parse, and generate intermediate code.
+• Implemented constant folding and basic optimizations, managed symbol tables and scope tracking.
+• Worked in a version-controlled team setting using Git to debug parser and code generation logic.
