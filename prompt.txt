@@ -24,4 +24,4 @@ Rules:
 - improvements: max 5 items
 - sections should reflect resume parts like Experience, Projects, Skills
 - output ONLY JSON, no markdown, no explanation
-- Be very STRICT!!
+- Be brutally STRICT!!
